@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FB418C411E065031008FAD49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418C401E065031008FAD49 /* AppDelegate.swift */; };
-		FB418C431E065031008FAD49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418C421E065031008FAD49 /* ViewController.swift */; };
-		FB418C461E065031008FAD49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB418C441E065031008FAD49 /* Main.storyboard */; };
+		FB418C431E065031008FAD49 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418C421E065031008FAD49 /* RecordSoundsViewController.swift */; };
 		FB418C481E065031008FAD49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB418C471E065031008FAD49 /* Assets.xcassets */; };
 		FB418C4B1E065031008FAD49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB418C491E065031008FAD49 /* LaunchScreen.storyboard */; };
+		FB418C541E078A4D008FAD49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB418C521E078A4C008FAD49 /* Main.storyboard */; };
+		FB418C561E078F67008FAD49 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB418C551E078F67008FAD49 /* PlaySoundsViewController.swift */; };
+		FBCD9AA91E0A36C400A1B107 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD9AA81E0A36C400A1B107 /* PlaySoundsViewController+Audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB418C3D1E065031008FAD49 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB418C401E065031008FAD49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB418C421E065031008FAD49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB418C451E065031008FAD49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB418C421E065031008FAD49 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		FB418C471E065031008FAD49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB418C4A1E065031008FAD49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB418C4C1E065031008FAD49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB418C531E078A4C008FAD49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB418C551E078F67008FAD49 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		FBCD9AA81E0A36C400A1B107 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				FB418C401E065031008FAD49 /* AppDelegate.swift */,
-				FB418C421E065031008FAD49 /* ViewController.swift */,
-				FB418C441E065031008FAD49 /* Main.storyboard */,
+				FB418C521E078A4C008FAD49 /* Main.storyboard */,
+				FB418C421E065031008FAD49 /* RecordSoundsViewController.swift */,
 				FB418C471E065031008FAD49 /* Assets.xcassets */,
 				FB418C491E065031008FAD49 /* LaunchScreen.storyboard */,
 				FB418C4C1E065031008FAD49 /* Info.plist */,
+				FBCD9AA81E0A36C400A1B107 /* PlaySoundsViewController+Audio.swift */,
+				FB418C551E078F67008FAD49 /* PlaySoundsViewController.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -123,9 +129,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB418C541E078A4D008FAD49 /* Main.storyboard in Resources */,
 				FB418C4B1E065031008FAD49 /* LaunchScreen.storyboard in Resources */,
 				FB418C481E065031008FAD49 /* Assets.xcassets in Resources */,
-				FB418C461E065031008FAD49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB418C431E065031008FAD49 /* ViewController.swift in Sources */,
+				FB418C431E065031008FAD49 /* RecordSoundsViewController.swift in Sources */,
+				FBCD9AA91E0A36C400A1B107 /* PlaySoundsViewController+Audio.swift in Sources */,
+				FB418C561E078F67008FAD49 /* PlaySoundsViewController.swift in Sources */,
 				FB418C411E065031008FAD49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,20 +152,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB418C441E065031008FAD49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB418C451E065031008FAD49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB418C491E065031008FAD49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FB418C4A1E065031008FAD49 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FB418C521E078A4C008FAD49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB418C531E078A4C008FAD49 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -299,6 +307,7 @@
 				FB418C511E065031008FAD49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
